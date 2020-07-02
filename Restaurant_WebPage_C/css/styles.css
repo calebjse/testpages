@@ -1,9 +1,9 @@
-
 * {
-	margin:0;
-	padding:0;
-	border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
 body {
     background-color: #61122f;
     font-size: 16px;
@@ -24,7 +24,7 @@ body {
     width: 200px;
     height: 132px;
     margin: 10px 15px 10px 0px;
-    
+
 }
 
 .navbar-brand {
@@ -49,148 +49,209 @@ body {
     text-decoration: none;
 }
 
-.navbar-brand p{
-    color:#000;
+.navbar-brand p {
+    color: #000;
     text-transform: uppercase;
     font-size: 0.7em;
     margin-top: 10px;
 }
 
-.navbar-brand p span{
+.navbar-brand p span {
     vertical-align: middle;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border-color: #61122f !important;
 }
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(150,7,18,0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
- }
-  
- 
+}
 
-#nav-list{
+
+
+#nav-list {
     margin-top: 10px;
 }
 
-#nav-list a{
-    color:#951c49;
+#nav-list a {
+    color: #951c49;
     text-align: center;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
 
 
-#nav-list > .nav-item a.nav-link:hover{
-    background-color:#e7e7e7;
+#nav-list>.nav-item a.nav-link:hover {
+    background-color: #e7e7e7;
 }
-#nav-list a span{
+
+#nav-list a span {
     font-size: 1.1em;
-    width:65px;
+    width: 65px;
 }
 
-#phone{
+#phone {
     margin-top: 5px;
     margin-left: 20px;
 }
 
 #phone a {
     text-align: right;
-    padding-bottom:0 ;
+    padding-bottom: 0;
 }
 
 #phone div {
-    color:#557c3e;
+    color: #557c3e;
     text-align: right;
     padding-right: 0;
 }
 
- #phoneSpc:hover{
-    background-color:#e7e7e7 ;
-} 
+#phoneSpc:hover {
+    background-color: #e7e7e7;
+}
 
 
 /*Menu Small Device Mode*/
-.navbar-nav a span{
+.navbar-nav a span {
     width: 1.3em !important;
-} 
+}
+
+#call-btn>a {
+    font-size: 1.5em;
+    display: block;
+    margin: 15px 20px 10px 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+
+}
 
 
 
 
 
+
+
+/*Shadow Default jumbotron*/
+.jumbotron{
+    box-shadow: 0px 0px 50px #3F0C1F;
+    /*Adds a shadow to the object*/
+    border: 2px solid #3f0c1f;
+}
+
+
+
+
+
+#deliverS {
+    margin-bottom: 5px;
+}
 
 
 /*Large devices only*/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
+
+    /*These styles only be applied to the junbotron when its on a big screen*/
+    .jumbotron {
+        background-image: url("../images/jumbotron_1200.jpg") ;
+        height: 675px;
+
+    }
 
 }
 
 /*Medium devices only*/
-@media(min-width:992px) and (max-width:1199px){
+@media(min-width:992px) and (max-width:1199px) {
     .navbar-brand h1 {
         padding-top: 10px;
         font-size: 1.1em;
     }
+
     #logo-img {
         background-image: url("../images/logo_opt.png");
         width: 100px;
         height: 66px;
         margin: 5px 3px 5px 0px;
-        
     }
+    .jumbotron{
+        background-image: url("../images/jumbotron_992.jpg");
+        height:558px;
+
+    }
+
 }
+
 /*Small devices only*/
-@media(min-width:768px) and (max-width:991px){
-   
-    #nav-list a{
-        color:#951c49;
+@media(min-width:768px) and (max-width:991px) {
+
+    #nav-list a {
+        color: #951c49;
         text-align: center;
-        font-size:1.2em;
-    } 
+        font-size: 1.2em;
+    }
+
     .navbar-brand h1 {
         padding-top: 10px;
         font-size: 1.1em;
     }
+
     #phone a {
         text-align: right;
-        padding-bottom:0 ;
+        padding-bottom: 0;
         font-size: 1.2em;
     }
-    #phone div {
-        font-size:1em;
-    } 
 
+    #phone div {
+        font-size: 1em;
+    }
+
+    .jumbotron{
+        background-image: url("../images/jumbotron_768.jpg");
+        height:432px;
+    
+    }
 
 }
 
 /*Extra small devices only*/
-@media(max-width:767px){
-     .navbar-brand {
-        padding-top:10px;
+@media(max-width:767px) {
+    .navbar-brand {
+        padding-top: 10px;
         height: 80px;
     }
+
     .navbar-brand h1 {
         padding-top: 10px;
         font-size: 4vw;
     }
+
     .navbar-brand p {
         text-transform: uppercase;
         font-size: .6em;
         margin-top: 12px;
     }
-    .navbar-brand p img{
-        height:20px;
+
+    .navbar-brand p img {
+        height: 20px;
     }
+
     #phone a {
         text-align: right;
-        padding-bottom:0 ;
+        padding-bottom: 0;
         font-size: 0.8em;
     }
+
     #phone div {
-        font-size:0.7em;
-    } 
+        font-size: 0.7em;
+    }
+
+    .jumbotron{
+        margin-top:20px;
+        padding:0;
+
+    }
 
 }
 
