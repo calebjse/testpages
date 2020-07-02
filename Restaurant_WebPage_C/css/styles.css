@@ -111,6 +111,10 @@ body {
 } 
 
 
+/*Menu Small Device Mode*/
+.navbar-nav a span{
+    width: 1.3em !important;
+} 
 
 
 
