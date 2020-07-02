@@ -1,0 +1,227 @@
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+body {
+    background-color: #61122f;
+    font-size: 16px;
+    color: #fff;
+    font-family: Oxygen, sans-serif;
+}
+
+/**HEADER**/
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+    /*height: 40%;*/
+}
+
+#logo-img {
+    background-image: url("../images/logo.png");
+    width: 200px;
+    height: 132px;
+    margin: 10px 15px 10px 0px;
+    
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: Lora, serif;
+    color: #557c3e;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.75;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    /*When you hover the curser above the image, not should display as an hyperlink */
+    text-decoration: none;
+}
+
+.navbar-brand p{
+    color:#000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+.navbar-brand p span{
+    vertical-align: middle;
+}
+
+.navbar-toggler{
+    border-color: #61122f !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(150,7,18,0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+ }
+  
+ 
+
+#nav-list{
+    margin-top: 10px;
+}
+
+#nav-list a{
+    color:#951c49;
+    text-align: center;
+    font-size:1.2em;
+}
+
+
+
+#nav-list > .nav-item a.nav-link:hover{
+    background-color:#e7e7e7;
+}
+#nav-list a span{
+    font-size: 1.1em;
+    width:65px;
+}
+
+#phone{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#phone a {
+    text-align: right;
+    padding-bottom:0 ;
+}
+
+#phone div {
+    color:#557c3e;
+    text-align: right;
+    padding-right: 0;
+}
+
+ #phoneSpc:hover{
+    background-color:#e7e7e7 ;
+} 
+
+
+
+
+
+
+
+
+
+/*Large devices only*/
+@media (min-width: 1200px){
+
+}
+
+/*Medium devices only*/
+@media(min-width:992px) and (max-width:1199px){
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 1.1em;
+    }
+    #logo-img {
+        background-image: url("../images/logo_opt.png");
+        width: 100px;
+        height: 66px;
+        margin: 5px 3px 5px 0px;
+        
+    }
+}
+/*Small devices only*/
+@media(min-width:768px) and (max-width:991px){
+   
+    #nav-list a{
+        color:#951c49;
+        text-align: center;
+        font-size:1.2em;
+    } 
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 1.1em;
+    }
+    #phone a {
+        text-align: right;
+        padding-bottom:0 ;
+        font-size: 1.2em;
+    }
+    #phone div {
+        font-size:1em;
+    } 
+
+
+}
+
+/*Extra small devices only*/
+@media(max-width:767px){
+     .navbar-brand {
+        padding-top:10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 4vw;
+    }
+    .navbar-brand p {
+        text-transform: uppercase;
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img{
+        height:20px;
+    }
+    #phone a {
+        text-align: right;
+        padding-bottom:0 ;
+        font-size: 0.8em;
+    }
+    #phone div {
+        font-size:0.7em;
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Adding Fonts*/
+@font-face {
+    src: url(fonts/Oxygen-Regular.ttf);
+    font-family: Oxygen;
+
+}
+
+@font-face {
+    src: url(fonts/Lora-Regular.ttf);
+    font-family: Lora;
+}
