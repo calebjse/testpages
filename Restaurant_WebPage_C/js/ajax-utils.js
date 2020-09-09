@@ -1,6 +1,9 @@
 (function (global) {
+
     // Set up a namespace for our utility
     var ajaxUtils = {};
+    
+    
     // Returns an HTTP request object
     function getRequestObject() {
       if (global.XMLHttpRequest) {
@@ -41,10 +44,8 @@
       }
     }
     
-    
     // Expose utility to the global object
     global.$ajaxUtils = ajaxUtils;
-    
     
     })(window);
     
